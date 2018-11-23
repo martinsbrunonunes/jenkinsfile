@@ -1,22 +1,16 @@
-//Declarative Pipeline
-
 pipeline {
-    agent any
-
+    agente any 
     stages {
-        stage('Build') {
+        stages ('Example') {
             steps {
-                echo 'Building..'
+                echo 'Hello World'
+    stages {
+        stages ('Example') {
+            steps {
+                echo 'Hello Indra'
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+    }            
             }
         }
     }
